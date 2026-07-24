@@ -2,19 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for the DevDesk developer toolbox on Android and Windows.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Privacy Policy for the DevDesk offline-first developer toolbox for Android and Windows."
+  >
+
   <meta name="color-scheme" content="light dark">
+
   <title>DevDesk Privacy Policy</title>
+
   <style>
     :root {
       color-scheme: light dark;
+
       --page: #f5f7fb;
       --surface: #ffffff;
       --text: #172033;
       --muted: #536079;
       --accent: #2457d6;
       --border: #d9e0ee;
+      --notice: #eef4ff;
+      --notice-border: #b8ccff;
       --shadow: 0 14px 40px rgba(23, 32, 51, 0.09);
     }
 
@@ -26,17 +40,32 @@
         --muted: #aebbd2;
         --accent: #8fb0ff;
         --border: #2b3850;
+        --notice: #17243d;
+        --notice-border: #385a9c;
         --shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
       }
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
       background: var(--page);
       color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
       font-size: 17px;
       line-height: 1.65;
     }
@@ -46,15 +75,23 @@
       margin: 32px auto 64px;
     }
 
-    header, section {
+    header,
+    section {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 16px;
       box-shadow: var(--shadow);
     }
 
-    header { padding: clamp(24px, 5vw, 48px); }
-    section { margin-top: 18px; padding: clamp(20px, 4vw, 32px); }
+    header {
+      padding: clamp(24px, 5vw, 48px);
+    }
+
+    section {
+      margin-top: 18px;
+      padding: clamp(20px, 4vw, 32px);
+      scroll-margin-top: 20px;
+    }
 
     .eyebrow {
       margin: 0 0 8px;
@@ -65,18 +102,81 @@
       text-transform: uppercase;
     }
 
-    h1, h2 { line-height: 1.2; }
-    h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.5rem); }
-    h2 { margin: 0 0 14px; font-size: clamp(1.25rem, 3vw, 1.55rem); }
-    p { margin: 12px 0 0; }
-    ul { margin: 12px 0 0; padding-left: 1.35rem; }
-    li + li { margin-top: 8px; }
+    h1,
+    h2 {
+      line-height: 1.2;
+    }
 
-    .meta, .summary { color: var(--muted); }
-    .meta { margin-top: 12px; }
-    .summary { max-width: 700px; font-size: 1.05rem; }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+    }
 
-    a { color: var(--accent); text-underline-offset: 3px; }
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.25rem, 3vw, 1.55rem);
+    }
+
+    p {
+      margin: 12px 0 0;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 1.35rem;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .meta,
+    .summary {
+      color: var(--muted);
+    }
+
+    .meta {
+      margin-top: 12px;
+    }
+
+    .summary {
+      max-width: 720px;
+      font-size: 1.05rem;
+    }
+
+    .notice {
+      margin-top: 20px;
+      padding: 16px 18px;
+      background: var(--notice);
+      border: 1px solid var(--notice-border);
+      border-radius: 12px;
+    }
+
+    .notice p {
+      margin: 0;
+    }
+
+    code {
+      padding: 0.12rem 0.3rem;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      font-family:
+        "Cascadia Code",
+        "SFMono-Regular",
+        Consolas,
+        monospace;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
     a:focus-visible {
       outline: 3px solid var(--accent);
       outline-offset: 4px;
@@ -91,115 +191,578 @@
     }
 
     @media (max-width: 420px) {
-      body { font-size: 16px; }
-      main { width: min(100% - 20px, 900px); margin-top: 10px; }
-      header, section { border-radius: 12px; }
+      body {
+        font-size: 16px;
+      }
+
+      main {
+        width: min(100% - 20px, 900px);
+        margin-top: 10px;
+      }
+
+      header,
+      section {
+        border-radius: 12px;
+      }
     }
 
     @media print {
-      body { background: #fff; color: #000; }
-      main { width: 100%; margin: 0; }
-      header, section { box-shadow: none; break-inside: avoid; }
-      a { color: #000; }
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+
+      main {
+        width: 100%;
+        margin: 0;
+      }
+
+      header,
+      section {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      a {
+        color: #000000;
+      }
+
+      .notice {
+        background: #ffffff;
+        border-color: #777777;
+      }
     }
   </style>
 </head>
+
 <body>
   <main>
     <header>
       <p class="eyebrow">Privacy Policy</p>
+
       <h1>DevDesk Privacy Policy</h1>
-      <p class="meta"><strong>Effective date:</strong> 22 July 2026 &nbsp;•&nbsp; <strong>Policy version:</strong> 2026-07-22</p>
-      <p class="summary">DevDesk is an offline-first developer toolbox for Android and Windows. This page explains what stays on your device and what is sent only when you choose a network action.</p>
+
+      <p class="meta">
+        <strong>Effective date:</strong>
+        24 July 2026
+        &nbsp;•&nbsp;
+        <strong>Policy version:</strong>
+        2026-07-24
+      </p>
+
+      <p class="summary">
+        DevDesk is an offline-first developer toolbox for Android and
+        Windows. This Privacy Policy explains what information stays on
+        your device and what information is transmitted only when you
+        deliberately use a feature that communicates with another
+        service.
+      </p>
+
+      <div class="notice">
+        <p>
+          <strong>Important:</strong>
+          DevDesk does not operate an online account system, advertising
+          service, analytics platform, telemetry service, cloud
+          synchronization service or intermediary API server.
+        </p>
+      </div>
     </header>
 
-    <section>
-      <h2>1. Who this policy covers</h2>
-      <p>This Privacy Policy explains how DevDesk, published by Baisalya, accesses, uses, stores, shares, retains, and deletes information on Android and Windows. DevDesk is an offline-first developer toolbox.</p>
-      <p>DevDesk has no user account system, advertising, analytics, telemetry, cloud synchronization, or DevDesk-operated backend. Baisalya does not receive ordinary app usage or locally stored content from the app.</p>
+    <section id="scope">
+      <h2>1. Scope and developer information</h2>
+
+      <p>
+        This Privacy Policy explains how DevDesk, published by Baisalya,
+        accesses, processes, stores, transmits, retains and deletes
+        information when you use the DevDesk application on Android or
+        Windows.
+      </p>
+
+      <p>
+        DevDesk is an offline-first developer toolbox. Most app content
+        and settings remain locally on your device.
+      </p>
+
+      <p>
+        DevDesk has no DevDesk-operated user account system, advertising,
+        analytics, telemetry, cloud synchronization or application
+        backend. Baisalya does not ordinarily receive your locally stored
+        notes, API workspaces, request history, credentials, settings or
+        app-usage information.
+      </p>
     </section>
 
-    <section>
+    <section id="local-data">
       <h2>2. Information stored on your device</h2>
-      <p>DevDesk stores information only to provide features you choose to use. Ordinary application records are stored in the app's private local data area.</p>
+
+      <p>
+        DevDesk stores information locally only as necessary to provide
+        the features you choose to use. Ordinary application records are
+        stored within the app's private local data area.
+      </p>
+
+      <p>Depending on the features you use, local information may include:</p>
+
       <ul>
-        <li>Markdown documents, notes, snippets, favourites, recent tools, and appearance preferences.</li>
-        <li>API workspaces, environments, sanitized request history, reports, and vault content.</li>
-        <li>A local record of the Privacy Policy version you accepted and the acceptance time.</li>
-        <li>Local rating-prompt preferences and launch counters.</li>
+        <li>
+          Markdown documents, notes, snippets, favourites and recently
+          used tools.
+        </li>
+
+        <li>
+          Appearance settings, theme preferences and other application
+          preferences.
+        </li>
+
+        <li>
+          API workspaces, collections, environments, request history and
+          response history.
+        </li>
+
+        <li>
+          Locally generated reports, snippets and other developer-tool
+          output.
+        </li>
+
+        <li>
+          Vault entries and values that you choose to mark as protected
+          secrets.
+        </li>
+
+        <li>
+          A local record of the Privacy Policy version you acknowledged
+          and the acknowledgement time.
+        </li>
+
+        <li>
+          Local rating-prompt preferences, launch counters and related
+          user-interface state.
+        </li>
       </ul>
+
+      <p>
+        Sensitive information may be redacted from certain portable
+        records where supported. However, automated redaction cannot
+        guarantee that every confidential value will be detected.
+      </p>
     </section>
 
-    <section>
-      <h2>3. Credentials and sensitive values</h2>
-      <p>API credentials and marked secret values are separated from ordinary workspace records where the operating system provides an appropriate protection boundary.</p>
+    <section id="secrets">
+      <h2>3. Credentials and protected values</h2>
+
+      <p>
+        API credentials and values marked as secrets are separated from
+        ordinary workspace records where the operating system provides an
+        appropriate protection boundary.
+      </p>
+
       <ul>
-        <li>Android: encrypted using a key held by Android Keystore.</li>
-        <li>Windows: protected with Windows Data Protection API (DPAPI) for the current Windows user.</li>
-        <li>Protected secret values are excluded from DevDesk backups by default.</li>
+        <li>
+          <strong>Android:</strong>
+          protected secret values are encrypted using a key held by
+          Android Keystore.
+        </li>
+
+        <li>
+          <strong>Windows:</strong>
+          protected secret values are secured using Windows Data
+          Protection API, also known as DPAPI, for the current Windows
+          user.
+        </li>
+
+        <li>
+          Protected secret values are excluded from DevDesk-generated
+          backups, collection exports, reports, portable request history,
+          generated snippets and clipboard output where those features
+          support protected values.
+        </li>
       </ul>
+
+      <p>
+        You are responsible for determining whether information is safe
+        to store, send, copy or export. Do not store production credentials
+        in an unprotected field.
+      </p>
     </section>
 
-    <section>
+    <section id="network">
       <h2>4. User-initiated network activity</h2>
-      <p>DevDesk does not send analytics or content to Baisalya. It uses the network for the following actions that you initiate:</p>
+
+      <p>
+        DevDesk does not send analytics, telemetry or locally stored
+        content to Baisalya. Network communication occurs only when you
+        use a feature that requires access to another service or page.
+      </p>
+
+      <p>User-initiated network activity may include:</p>
+
       <ul>
-        <li>API Tester sends the URL, method, headers, parameters, cookies, and body you prepare to the server or service whose URL you choose, and receives its response.</li>
-        <li>Supported GitHub comparison and import actions fetch public repository metadata, files, or archives from GitHub URLs you choose.</li>
-        <li>A link-check action sends an HTTP HEAD request to the link you ask DevDesk to validate.</li>
-        <li>Rating, store, support, or repository actions open the applicable Google Play, Microsoft Store, GitHub, or browser destination only after you select them.</li>
+        <li>
+          <strong>API Tester:</strong>
+          sends the URL, HTTP method, headers, authorization information,
+          parameters, cookies and request body that you prepare to the
+          server or service whose URL you choose. DevDesk then receives
+          the response returned by that destination.
+        </li>
+
+        <li>
+          <strong>GitHub tools:</strong>
+          supported comparison, preview or import actions may fetch public
+          repository metadata, files or archives from GitHub URLs that you
+          choose.
+        </li>
+
+        <li>
+          <strong>Link checking:</strong>
+          a link-validation feature may send an HTTP request, such as a
+          HEAD request, to the URL that you ask DevDesk to check.
+        </li>
+
+        <li>
+          <strong>External destinations:</strong>
+          rating, store, support, repository and other external-link
+          actions open the applicable Google Play, Microsoft Store,
+          GitHub or browser destination after you select the action.
+        </li>
       </ul>
+
+      <p>
+        DevDesk does not proxy API Tester requests through a
+        DevDesk-operated server.
+      </p>
     </section>
 
-    <section>
-      <h2>5. What destination services receive</h2>
-      <p>A server contacted by your action receives the information needed to complete that action. Depending on what you enter, this can include your IP address, request URL, headers, cookies, request body, and other content. DevDesk sends these requests directly from your device and does not proxy them through a DevDesk server.</p>
-      <p>The destination service, network provider, operating system, browser, Google Play, Microsoft Store, or GitHub may process information under its own privacy policy. Review the destination and use HTTPS before sending sensitive information. Android production builds block cleartext HTTP; Windows follows the URL you choose.</p>
+    <section id="destinations">
+      <h2>5. Information received by destination services</h2>
+
+      <p>
+        A server or service contacted through an action you initiate
+        receives the information required to complete that action.
+      </p>
+
+      <p>
+        Depending on what you enter and send, the destination may receive:
+      </p>
+
+      <ul>
+        <li>Your device's public IP address.</li>
+        <li>The destination URL and request method.</li>
+        <li>Headers and authorization information.</li>
+        <li>Cookies and query parameters.</li>
+        <li>Request-body content.</li>
+        <li>Files or other content that you deliberately include.</li>
+        <li>Technical connection information normally associated with an HTTP request.</li>
+      </ul>
+
+      <p>
+        The destination service, network provider, operating system,
+        browser, Google Play, Microsoft Store or GitHub may process
+        information under its own terms and privacy policy.
+      </p>
+
+      <p>
+        Review the destination URL before sending a request. Use HTTPS
+        when transmitting sensitive information.
+      </p>
+
+      <p>
+        Android production builds block cleartext HTTP connections.
+        The Windows version follows the URL and protocol that you choose.
+      </p>
     </section>
 
-    <section>
-      <h2>6. Files, exports, and clipboard</h2>
-      <p>DevDesk reads a file only after you select it through the platform picker. Android uses document access supplied by the system and does not request broad storage access. Windows uses paths selected by you.</p>
-      <p>Backups and exports remain wherever you save or share them. Explicit copy actions place content in the operating-system clipboard. DevDesk applies conservative redaction to portable API history, reports, generated snippets, clipboard output, collection exports, and backups, but automatic redaction cannot guarantee that every confidential value will be recognized. Review content before sharing it.</p>
-      <p>Remote images in Markdown are blocked, so Markdown preview does not silently load tracking pixels or other remote image resources.</p>
+    <section id="files">
+      <h2>6. Files, exports, backups and clipboard</h2>
+
+      <p>
+        DevDesk reads a file only after you select it using the applicable
+        platform file picker or another deliberate file-selection action.
+      </p>
+
+      <ul>
+        <li>
+          Android uses document access supplied by the operating system
+          and does not require broad access to all files on the device.
+        </li>
+
+        <li>
+          Windows accesses files and folders at paths selected by you.
+        </li>
+      </ul>
+
+      <p>
+        Files, reports, backups and exports remain in the location where
+        you choose to save or share them. These exported copies exist
+        separately from DevDesk's private local application data.
+      </p>
+
+      <p>
+        Explicit copy actions place selected content in the
+        operating-system clipboard. Clipboard managers, synchronized
+        clipboard services and other applications may be able to access
+        clipboard content according to operating-system behaviour and
+        your device settings.
+      </p>
+
+      <p>
+        DevDesk applies conservative redaction to supported portable API
+        history, reports, generated snippets, clipboard output,
+        collection exports and backups. Automated redaction cannot
+        guarantee that every confidential value will be identified.
+        Always review content before saving, copying, exporting or
+        sharing it.
+      </p>
+
+      <p>
+        Redaction of stored history, exports and clipboard output does
+        not automatically remove headers, credentials, cookies,
+        parameters or body content from an API request that you
+        deliberately send to a destination server.
+      </p>
+
+      <p>
+        Remote images in Markdown previews are blocked so that previewing
+        Markdown does not silently load remote tracking pixels or other
+        remote image resources.
+      </p>
     </section>
 
-    <section>
-      <h2>7. Sharing, sale, and third-party SDKs</h2>
-      <p>Baisalya does not sell user data. DevDesk does not share locally stored content with advertisers, data brokers, or a DevDesk service. The user-initiated transfers described above go only to the destination you choose or the external page you open.</p>
-      <p>The app does not include advertising, analytics, Firebase, social-login, or payment SDKs. Flutter packages used for local storage, file selection, package information, protected platform storage, HTTP requests, and URL launching operate only when the corresponding app feature uses them.</p>
+    <section id="sharing">
+      <h2>7. Sharing, sale and third-party software</h2>
+
+      <p>
+        Baisalya does not sell user data.
+      </p>
+
+      <p>
+        DevDesk does not share locally stored content with advertisers,
+        data brokers or a DevDesk-operated service. User-initiated
+        transfers described in this policy are sent only to the
+        destination service selected by you or to the external page that
+        you choose to open.
+      </p>
+
+      <p>
+        DevDesk does not include advertising, analytics, Firebase,
+        social-login or payment SDKs.
+      </p>
+
+      <p>
+        Flutter packages used for local storage, file selection, package
+        information, protected platform storage, HTTP requests, archive
+        handling and URL launching operate when the corresponding app
+        feature requires them.
+      </p>
     </section>
 
-    <section>
+    <section id="security">
       <h2>8. Security and platform boundaries</h2>
-      <p>DevDesk uses platform-private storage, protected secret storage where available, guarded file replacement, bounded network operations, validation for backup imports, and redaction for portable API data. No security control is absolute.</p>
-      <p>Device administrators, malware running as your user, screen capture, clipboard managers, synchronized clipboard features, operating-system backups, a compromised device, and the security practices of destination services are outside DevDesk's control. Android application backup and data extraction are disabled for DevDesk private data. Windows data follows the Windows user profile and its backup policy.</p>
+
+      <p>DevDesk uses safeguards that may include:</p>
+
+      <ul>
+        <li>Platform-private application storage.</li>
+        <li>Protected storage for secret values where supported.</li>
+        <li>Guarded file replacement and validated backup imports.</li>
+        <li>Bounded network operations and request validation.</li>
+        <li>Redaction of supported portable API data.</li>
+        <li>Disabled Android application backup and data extraction.</li>
+      </ul>
+
+      <p>
+        No method of storage, encryption or transmission can provide
+        absolute security.
+      </p>
+
+      <p>
+        Device administrators, malware running under your user account,
+        screen capture, clipboard managers, synchronized clipboard
+        services, operating-system backups, compromised devices and the
+        security practices of destination services are outside DevDesk's
+        control.
+      </p>
+
+      <p>
+        Android application backup and device-transfer extraction are
+        disabled for DevDesk private application data. Windows
+        application data follows the current Windows user profile and the
+        backup policies configured for that profile or device.
+      </p>
     </section>
 
-    <section>
+    <section id="retention">
       <h2>9. Retention and deletion</h2>
-      <p>Local records remain until you delete them, use Clear All Data, clear the app through the operating system, or uninstall the app. Some API history and report collections also use application limits. Clear All Data cancels active API work and removes known local records, protected secrets, settings, rating state, and the policy-acceptance record. The policy gate will appear again afterward.</p>
-      <p>Files and backups you exported are separate copies and must be deleted from their saved locations by you. Information already sent to a destination service is controlled by that service and must be deleted through that service. DevDesk has no online account to delete and no server-side DevDesk user profile.</p>
+
+      <p>
+        Local DevDesk records remain on your device until one of the
+        following occurs:
+      </p>
+
+      <ul>
+        <li>You delete an individual record using an available app control.</li>
+        <li>You use the DevDesk Clear All Data feature.</li>
+        <li>You clear DevDesk application data through the operating system.</li>
+        <li>You uninstall DevDesk.</li>
+        <li>An application limit removes older history or report entries.</li>
+      </ul>
+
+      <p>
+        Clear All Data cancels active API work and removes known local
+        application records, protected secret records, settings, rating
+        state and the locally stored Privacy Policy acknowledgement
+        record. The Privacy Policy acknowledgement screen may appear
+        again after the reset.
+      </p>
+
+      <p>
+        Backups, reports and files that you exported are separate copies.
+        You must delete those copies from their saved or shared locations
+        yourself.
+      </p>
+
+      <p>
+        Information already transmitted to a destination service is
+        controlled by that destination service and must be managed or
+        deleted through that service.
+      </p>
+
+      <p>
+        DevDesk has no online account to delete and no server-side DevDesk
+        user profile.
+      </p>
     </section>
 
-    <section>
+    <section id="children">
       <h2>10. Children's privacy</h2>
-      <p>DevDesk is a professional developer tool and is not directed to children. DevDesk does not knowingly operate a service that collects personal information from children.</p>
+
+      <p>
+        DevDesk is a professional developer tool and is not designed or
+        directed specifically toward children.
+      </p>
+
+      <p>
+        DevDesk does not knowingly operate an online service that
+        collects children's personal information for advertising,
+        profiling or analytics.
+      </p>
+
+      <p>
+        A parent or guardian who believes that a child has submitted
+        personal information directly to the developer may contact the
+        developer using the contact information below.
+      </p>
     </section>
 
-    <section>
-      <h2>11. Changes to this policy</h2>
-      <p>The effective date and policy version appear at the top of this policy. When a material in-app policy change is introduced, DevDesk changes the version and asks you to acknowledge the updated policy before continuing to use the app.</p>
+    <section id="international">
+      <h2>11. International data transfers</h2>
+
+      <p>
+        DevDesk does not transfer locally stored information to a
+        DevDesk-operated server.
+      </p>
+
+      <p>
+        When you send an API request, open an external service or use a
+        GitHub-related feature, the destination service may process
+        information in a country different from your own. Any such
+        processing is governed by the destination service's
+        infrastructure, terms and privacy policy.
+      </p>
     </section>
 
-    <section>
-      <h2>12. Contact</h2>
-      <p>Privacy questions can be submitted to the <a href="https://github.com/Baisalya/devdesk-support/issues">DevDesk repository issue tracker</a>. Do not include credentials, tokens, private request bodies, or personal data in a public issue.</p>
-      <p>Security-sensitive reports should use a <a href="https://github.com/Baisalya/devdesk-support/security/advisories/new">private repository security advisory</a> when available.</p>
+    <section id="changes">
+      <h2>12. Changes to this Privacy Policy</h2>
+
+      <p>
+        The effective date and policy version appear at the top of this
+        page.
+      </p>
+
+      <p>
+        This policy may be updated when DevDesk features, privacy
+        practices, legal requirements or platform requirements change.
+      </p>
+
+      <p>
+        When a material in-app Privacy Policy change is introduced,
+        DevDesk may update the policy version and ask you to acknowledge
+        the revised policy before continuing to use the app.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>13. Contact, privacy questions and security reports</h2>
+
+      <p>
+        For privacy questions, data-handling questions or concerns about
+        this Privacy Policy, contact:
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:baishalya1999@gmail.com">
+          baishalya1999@gmail.com
+        </a>
+      </p>
+
+      <p>
+        General app-support questions and non-sensitive bug reports may
+        also be submitted through the
+        <a
+          href="https://github.com/Baisalya/devdesk-support/issues"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DevDesk support issue tracker
+        </a>.
+      </p>
+
+      <p>
+        Do not include passwords, API tokens, credentials, private
+        request bodies, personal information or confidential business
+        information in a public GitHub issue.
+      </p>
+
+      <p>
+        Security vulnerabilities should be reported through a
+        <a
+          href="https://github.com/Baisalya/devdesk-support/security/advisories/new"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          private GitHub security advisory
+        </a>
+        or by email at
+        <a href="mailto:YOUR_EMAIL_ADDRESS">
+          YOUR_EMAIL_ADDRESS
+        </a>.
+      </p>
+
+      <p>
+        Do not disclose security vulnerabilities, secret values or
+        exploit details through a public issue.
+      </p>
     </section>
 
     <footer>
-      <p>DevDesk • Android package <code>com.baishalya.devdesk</code> • <a href="https://github.com/Baisalya/devdesk">Source repository</a></p>
+      <p>
+        DevDesk
+        &nbsp;•&nbsp;
+        Android package
+        <code>com.baishalya.devdesk</code>
+        &nbsp;•&nbsp;
+        <a
+          href="https://github.com/Baisalya/devdesk-support"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Help and Support
+        </a>
+      </p>
+
+      <p>
+        © 2026 Baisalya. All rights reserved.
+      </p>
     </footer>
   </main>
 </body>
