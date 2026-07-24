@@ -1,0 +1,76 @@
+name: Bug Report
+description: Report a reproducible bug in DevDesk.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please provide as much detail as possible.
+        **WARNING: DO NOT include API keys, tokens, or personal data in this public issue.**
+  - type: input
+    id: version
+    attributes:
+      label: DevDesk Version
+      placeholder: e.g., 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - Windows
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: OS Version
+      placeholder: e.g., Android 14, Windows 11 23H2
+  - type: input
+    id: tool
+    attributes:
+      label: Affected Tool or Feature
+      placeholder: e.g., API Tester, JSON Formatter, Settings
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction Steps
+      description: How do we reproduce this?
+      placeholder: |
+        1. Open '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Result
+      placeholder: What should have happened?
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Result
+      placeholder: What actually happened?
+  - type: textarea
+    id: error_message
+    attributes:
+      label: Error Message (if any)
+      render: shell
+  - type: checkboxes
+    id: data_safety_confirmation
+    attributes:
+      label: Data Safety Confirmation
+      options:
+        - label: I confirm that I have removed all API keys, passwords, tokens, authentication headers, private request bodies, personal data, and proprietary source code from this report.
+          required: true

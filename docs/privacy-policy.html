@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDesk Privacy Policy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <div class="effective-date">Effective: 24 July 2026 | Last updated: 24 July 2026</div>
+        </header>
+
+        <section class="card">
+            <p><strong>DevDesk is offline-first by design.</strong> We believe your developer tools should respect your privacy and keep your data local.</p>
+        </section>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy explains how DevDesk, published by Baisalya, processes and protects your information on Android and Windows. DevDesk is an offline-first developer toolbox.</p>
+            <p>DevDesk has no user account system, advertising, analytics, telemetry, cloud synchronization, or DevDesk-operated backend. Baisalya does not receive your usage data or locally stored content.</p>
+        </section>
+
+        <section>
+            <h2>2. Information DevDesk Processes</h2>
+            <p>DevDesk stores information only to provide features you choose to use. Application records are stored in the app's private local data area on your device.</p>
+            <ul>
+                <li><strong>Local Workspace Content:</strong> Markdown documents, notes, snippets, favorites, and tool history.</li>
+                <li><strong>Preferences:</strong> Appearance settings and privacy policy acceptance records.</li>
+                <li><strong>Protected Secrets:</strong> API keys and tokens you mark as secrets are stored using platform security (Android Keystore or Windows DPAPI).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Local File Processing</h2>
+            <p>DevDesk reads a file only after you explicitly select it through the platform's file picker. It does not request broad storage access. Windows uses paths selected by you, and Android uses system-provided document access.</p>
+        </section>
+
+        <section>
+            <h2>4. API Testing and Network Requests</h2>
+            <p>DevDesk sends network requests <strong>only when you initiate them</strong>:</p>
+            <ul>
+                <li><strong>API Tester:</strong> Sends requests to the URL you provide and receives responses directly. No DevDesk proxy is used.</li>
+                <li><strong>External Content:</strong> Fetching public GitHub metadata or files for comparison/import features.</li>
+                <li><strong>Link Validation:</strong> Sending HEAD requests to validate URLs you provide.</li>
+            </ul>
+            <p>The destination service receives your IP address and the request details. Review the destination's privacy policy before sending sensitive data.</p>
+        </section>
+
+        <section>
+            <h2>5. Data Security</h2>
+            <p>Protected secrets are excluded from DevDesk backups by default. We use platform-specific encryption to guard sensitive values. However, no security control is absolute. Malware or physical access to an unlocked device may expose data.</p>
+        </section>
+
+        <section>
+            <h2>6. Retention and Deletion</h2>
+            <p>All data remains on your device until you delete it, use the "Clear All Data" feature in Settings, or uninstall the app. DevDesk has no online account to delete.</p>
+        </section>
+
+        <section>
+            <h2>7. Children's Privacy</h2>
+            <p>DevDesk is a professional developer tool and is not directed to children under 13.</p>
+        </section>
+
+        <section>
+            <h2>8. Contact and Privacy Questions</h2>
+            <p>Privacy questions may be submitted through the DevDesk Support repository’s <a href="https://github.com/Baisalya/devdesk-support/issues/new/choose" rel="noopener noreferrer">Privacy Question form</a>. <strong>Do not include credentials, personal data, or proprietary source code in a public issue.</strong></p>
+        </section>
+
+        <section>
+            <h2>9. Security Vulnerability Reporting</h2>
+            <p>Do not report security vulnerabilities in a public GitHub issue. Use DevDesk’s private vulnerability reporting channel: <a href="https://github.com/Baisalya/devdesk-support/security/advisories/new" rel="noopener noreferrer">Report Security Vulnerability</a>.</p>
+        </section>
+
+        <footer>
+            <p><a href="index.html" class="btn btn-outline">Back to Support Home</a></p>
+            <p>&copy; 2026 DevDesk Contributors</p>
+        </footer>
+    </div>
+</body>
+</html>

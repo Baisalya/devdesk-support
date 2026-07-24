@@ -1,0 +1,40 @@
+name: Privacy Question
+description: Ask a general question about DevDesk privacy practices.
+labels: ["privacy"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### This is a PUBLIC issue.
+        Do not submit:
+        - Names of private individuals
+        - Email addresses or phone numbers
+        - API keys, tokens, or passwords
+        - Private API payloads or workspace content
+        - Proprietary source code
+        - Security vulnerability details (use the Security Policy instead)
+  - type: input
+    id: topic
+    attributes:
+      label: General Privacy Topic
+      placeholder: e.g., Local Storage, Network Requests
+    validations:
+      required: true
+  - type: input
+    id: feature
+    attributes:
+      label: DevDesk Feature Involved
+      placeholder: e.g., API Tester history
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+    validations:
+      required: true
+  - type: checkboxes
+    id: public_warning
+    attributes:
+      label: Public Visibility Acknowledgment
+      options:
+        - label: I understand that this is a public issue and I have not included any personal, confidential, or sensitive data.
+          required: true

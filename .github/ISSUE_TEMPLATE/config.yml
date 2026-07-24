@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Privacy Policy
+    url: https://baisalya.github.io/devdesk-support/privacy-policy.html
+    about: Read the complete DevDesk privacy policy.
+  - name: Support Homepage
+    url: https://baisalya.github.io/devdesk-support/
+    about: Access all public support resources.
+  - name: Private Security Report
+    url: https://github.com/Baisalya/devdesk-support/security/advisories/new
+    about: Privately report a potential security vulnerability.

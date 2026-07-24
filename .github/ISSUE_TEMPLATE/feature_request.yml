@@ -1,0 +1,53 @@
+name: Feature Request
+description: Suggest an idea or improvement for DevDesk.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We love hearing your ideas!
+        **REMINDER: DO NOT include confidential or proprietary information.**
+  - type: input
+    id: area
+    attributes:
+      label: Feature Area
+      placeholder: e.g., New Tool, UI Improvement, Performance
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Please describe.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or features you've considered.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Targeted Platform
+      options:
+        - Android
+        - Windows
+        - Both
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context or screenshots about the feature request here.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data Safety
+      options:
+        - label: I confirm that this request does not contain any confidential or proprietary information.
+          required: true
